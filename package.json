@@ -1,19 +1,34 @@
 {
-  "name": "marianvissersphotography",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dutchlander/marianvissersphotography.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dutchlander/marianvissersphotography/issues"
-  },
-  "homepage": "https://github.com/dutchlander/marianvissersphotography#readme"
+    "name": "marianvissersphotography",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "dev": "npm run development",
+        "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "npm run production",
+        "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dutchlander/marianvissersphotography.git"
+    },
+    "devDependencies": {
+        "laravel-mix": "^5.0.0",
+        "sass": "^1.23.3",
+        "sass-loader": "^8.0.0",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "dependencies": {
+        "axios": "^0.19.2",
+        "core-js": "^3.2.1",
+        "mobile-detect": "^1.4.4",
+        "vee-validate": "^3.2.5",
+        "vue": "^2.6.10",
+        "vue-awesome-swiper": "^3.1.3",
+        "vue2-scrollspy": "^2.3.1",
+        "vuex": "^3.1.1",
+        "vue-scrollto": "^2.15.0"
+    }
 }

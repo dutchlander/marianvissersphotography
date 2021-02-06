@@ -1,0 +1,13 @@
+.social-slider {
+	padding: 1rem;
+}
+
+.instagram__items {
+	grid-column: 1/13;
+}
+
+.instagram__item {
+	margin-right: 12px;
+}
+
+/*# sourceMappingURL=social-slider.css.map */

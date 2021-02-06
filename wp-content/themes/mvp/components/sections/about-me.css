@@ -1,0 +1,24 @@
+.about-me {
+	background-color: #f9f9f9;
+}
+
+.profile {
+	display: inline-grid;
+	grid-column: 1/13;
+	justify-items: center;
+	align-items: center;
+}
+
+@media screen and (min-width: 960px) {
+	.profile {
+		grid-column: 1 / 7;
+	}
+}
+
+@media screen and (min-width: 960px) {
+	.profile-image {
+		grid-column: 8/13;
+	}
+}
+
+/*# sourceMappingURL=about-me.css.map */

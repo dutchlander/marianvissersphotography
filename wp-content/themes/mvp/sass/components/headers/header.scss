@@ -1,0 +1,77 @@
+@import "../../abstracts/mixins/_mixins.scss";
+
+.header-image {
+    background-size: cover;
+    background-position: center center;
+    height: 95vh;
+
+    //@include breakpoint(xxl) {
+    //    height: 1076px;
+    //}
+}
+
+.header-image__container {
+    height: 100%;
+}
+
+.header-image__content {
+    grid-column: 1 / 12;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 100px 0 120px 0;
+    color: white;
+
+    // @include breakpoint(md) {
+    //     grid-column: 1 / 7;
+    // }
+
+    h1 {
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    }
+}
+
+
+.nav {
+    // display: none;
+
+    @include breakpoint(lg) {
+        // display: unset;
+    }
+
+}
+
+.grid nav {
+    grid-column: 2 / 12;
+    grid-row: 1;
+    
+}
+
+.navgrid {
+    background-color: white;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.nav__list-item {
+    display: inline-block;
+    
+}
+
+.nav__list-item a {
+    font-family: 'Indie Flower', cursive;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    letter-spacing: 2;
+    text-decoration: none;
+    color: #000;
+}

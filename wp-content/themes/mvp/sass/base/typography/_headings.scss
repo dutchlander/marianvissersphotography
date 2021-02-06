@@ -1,0 +1,43 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	margin: 0;
+}
+
+.header {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 1.8rem;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+
+	color: #000000;
+}
+
+.subheader {
+	font-family: 'Indie Flower', cursive;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.2rem;
+	letter-spacing: 0.085em;
+	text-transform: uppercase;
+	height: auto;
+	color: #363B34;
+}
+
+.bodytext {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 0.8rem;
+	line-height: 27px;
+	text-align: center;
+	letter-spacing: 0.185em;
+
+	color: #000000;
+}

@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "social-slider.css",
+	"sources": [
+		"../../sass/components/sections/social-slider.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,cAAc,CAAC;CACX,OAAO,EAAE,IAAI;CAChB;;AAED,AAAA,iBAAiB,CAAC;CACd,WAAW,EAAE,IAAI;CACpB;;AAED,AAAA,gBAAgB,CAAC;CACb,YAAY,EAAE,IAAI;CACrB"
+}

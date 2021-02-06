@@ -1,0 +1,102 @@
+.service {
+	padding: 1rem 0px;
+}
+
+@media screen and (min-width: 960px) {
+	.service {
+		padding: 2rem;
+	}
+}
+
+.service__content {
+	grid-row: 2;
+	grid-column: 1/13;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	background: #F9F9F9;
+	outline: 2px solid #C9BDB1;
+}
+
+@media screen and (min-width: 960px) {
+	.service__content {
+		grid-row: 1;
+		grid-column: 2/8;
+	}
+	.service__content.even {
+		grid-column: 5/12;
+	}
+}
+
+.service__content .service__content-header {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 3rem;
+	letter-spacing: 0.085em;
+	text-transform: uppercase;
+	color: #363B34;
+}
+
+.service__content .service__content-quote {
+	font-family: Indie Flower;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.5rem;
+	letter-spacing: 0.085em;
+	text-transform: uppercase;
+	margin: 0;
+	background-color: #C9BDB1;
+	color: #F9F9F9;
+	padding: 1rem;
+	text-align: center;
+}
+
+.service__content .service__content-price {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+	text-align: center;
+	letter-spacing: 0.085em;
+	color: #000000;
+}
+
+.service__content .service__content-info {
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.1rem;
+	line-height: 2.5rem;
+	text-align: center;
+	letter-spacing: 0.085em;
+	color: #000000;
+}
+
+.service__image {
+	grid-column: 1/13;
+	grid-row: 1;
+	display: inline-grid;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.service__image img {
+	object-fit: cover;
+	width: 100%;
+}
+
+@media screen and (min-width: 960px) {
+	.service__image {
+		grid-row: 1;
+		grid-column: 8/12;
+	}
+	.service__image.even {
+		grid-column: 2/5;
+	}
+}
+
+/*# sourceMappingURL=information.css.map */

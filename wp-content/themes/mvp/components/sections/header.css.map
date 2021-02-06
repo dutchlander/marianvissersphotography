@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "header.css",
+	"sources": [
+		"../../sass/components/sections/header.scss"
+	],
+	"names": [],
+	"mappings": "AAAA,AAAA,IAAI,CAAC;CACD,OAAO,EAAE,IAAI;CAEhB"
+}

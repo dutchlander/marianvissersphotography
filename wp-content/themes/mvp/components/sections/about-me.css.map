@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "about-me.css",
+	"sources": [
+		"../../sass/components/sections/about-me.scss",
+		"../../sass/abstracts/mixins/_mixins.scss"
+	],
+	"names": [],
+	"mappings": "AAGA,AAAA,SAAS,CAAC;CACN,gBAAgB,EAAE,OAAO;CAC5B;;AAED,AAAA,QAAQ,CAAC;CACL,OAAO,EAAE,WAAW;CACpB,WAAW,EAAE,IAAI;CACjB,aAAa,EAAE,MAAM;CACrB,WAAW,EAAE,MAAM;CAKtB;;ACoBO,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;CD7B3C,AAAA,QAAQ,CAAC;EAOD,WAAW,EAAE,KAAK;EAEzB;;;ACoBO,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;CDlB3C,AAAA,cAAc,CAAC;EAEP,WAAW,EAAE,IAAI;EAExB"
+}

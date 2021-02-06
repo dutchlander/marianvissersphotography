@@ -1,0 +1,14 @@
+.grid {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 1rem;
+    grid-row-gap: 12px;
+    display: grid;
+}
+
+.container {
+    width: 90vw;
+    max-width: 1680px;
+    // height: 100vh;
+    margin: 0 auto;
+}

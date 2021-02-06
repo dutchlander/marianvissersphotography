@@ -1,15 +1,15 @@
 /*!
 Theme Name: marianvissersphotography
-Theme URI: http://underscores.me/
-Author: Ruud Vissers
-Author URI: http://www.ruudvissers.nl
-Description: Description
+Theme URI: https://underscores.me/
+Author: Automattic
+Author URI: https://automattic.com/
+Description: Hi. I'm a starter theme called <code>marianvissersphotography</code>, or <em>underscores</em>, if you like. I'm a theme meant for hacking so don't use me as a <em>Parent Theme</em>. Instead try turning me into the next, most awesome, WordPress theme out there. That's what I'm here for.
 Version: 1.0.0
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
 License URI: LICENSE
-Text Domain: mvp
+Text Domain: marianvissersphotography
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
 
 This theme, like WordPress, is licensed under the GPL.
@@ -21,24 +21,47 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-.grid {
-	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: auto;
-	grid-column-gap: 1rem;
-	grid-row-gap: 12px;
-	display: grid;
-}
 
-.container {
-	width: 90vw;
-	max-width: 1680px;
-	margin: 0 auto;
-}
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic
+	- Normalize
+	- Box sizing
+# Base
+	- Typography
+	- Elements
+	- Links
+	- Forms
+## Layouts
+# Components
+	- Navigation
+	- Posts and pages
+	- Comments
+	- Widgets
+	- Media
+	- Captions
+	- Galleries
+# plugins
+	- Jetpack infinite scroll
+# Utilities
+	- Accessibility
+	- Alignments
+
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Generic
+--------------------------------------------------------------*/
+
+/* Normalize
+--------------------------------------------- */
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
 /* Document
 	 ========================================================================== */
+
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -50,6 +73,7 @@ html {
 
 /* Sections
 	 ========================================================================== */
+
 /**
  * Remove the margin in all browsers.
  */
@@ -75,6 +99,7 @@ h1 {
 
 /* Grouping content
 	 ========================================================================== */
+
 /**
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
@@ -96,6 +121,7 @@ pre {
 
 /* Text-level semantics
 	 ========================================================================== */
+
 /**
  * Remove the gray background on active links in IE 10.
  */
@@ -161,6 +187,7 @@ sup {
 
 /* Embedded content
 	 ========================================================================== */
+
 /**
  * Remove the border on images inside links in IE 10.
  */
@@ -170,6 +197,7 @@ img {
 
 /* Forms
 	 ========================================================================== */
+
 /**
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
@@ -315,6 +343,7 @@ textarea {
 
 /* Interactive
 	 ========================================================================== */
+
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
@@ -331,6 +360,7 @@ summary {
 
 /* Misc
 	 ========================================================================== */
+
 /**
  * Add the correct display in IE 10+.
  */
@@ -345,6 +375,9 @@ template {
 	display: none;
 }
 
+/* Box sizing
+--------------------------------------------- */
+
 /* Inherit box-sizing to more easily change it's value on a component level.
 @link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 *,
@@ -356,6 +389,10 @@ template {
 html {
 	box-sizing: border-box;
 }
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
 
 /* Typography
 --------------------------------------------- */
@@ -378,39 +415,6 @@ h4,
 h5,
 h6 {
 	clear: both;
-	margin: 0;
-}
-
-.header {
-	font-family: 'Poppins', sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 1.8rem;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-	color: #000000;
-}
-
-.subheader {
-	font-family: 'Indie Flower', cursive;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 1.2rem;
-	letter-spacing: 0.085em;
-	text-transform: uppercase;
-	height: auto;
-	color: #363B34;
-}
-
-.bodytext {
-	font-family: 'Poppins', sans-serif;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 0.8rem;
-	line-height: 27px;
-	text-align: center;
-	letter-spacing: 0.185em;
-	color: #000000;
 }
 
 p {
@@ -465,48 +469,6 @@ big {
 	font-size: 125%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	clear: both;
-	margin: 0;
-}
-
-.header {
-	font-family: 'Poppins', sans-serif;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 1.8rem;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-	color: #000000;
-}
-
-.subheader {
-	font-family: 'Indie Flower', cursive;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 1.2rem;
-	letter-spacing: 0.085em;
-	text-transform: uppercase;
-	height: auto;
-	color: #363B34;
-}
-
-.bodytext {
-	font-family: 'Poppins', sans-serif;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 0.8rem;
-	line-height: 27px;
-	text-align: center;
-	letter-spacing: 0.185em;
-	color: #000000;
-}
-
 /* Elements
 --------------------------------------------- */
 body {
@@ -522,7 +484,7 @@ hr {
 
 ul,
 ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 3em 1.5em 0;
 }
 
 ul {
@@ -536,7 +498,7 @@ ol {
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-right: 1.5em;
 }
 
 dt {
@@ -575,10 +537,12 @@ a {
 }
 
 a:visited {
-	color: #000;
+	color: #800080;
 }
 
-a:hover, a:focus, a:active {
+a:hover,
+a:focus,
+a:active {
 	color: #191970;
 }
 
@@ -586,7 +550,8 @@ a:focus {
 	outline: thin dotted;
 }
 
-a:hover, a:active {
+a:hover,
+a:active {
 	outline: 0;
 }
 
@@ -612,7 +577,8 @@ input[type="submit"]:hover {
 	border-color: #ccc #bbb #aaa;
 }
 
-button:active, button:focus,
+button:active,
+button:focus,
 input[type="button"]:active,
 input[type="button"]:focus,
 input[type="reset"]:active,
@@ -620,26 +586,6 @@ input[type="reset"]:focus,
 input[type="submit"]:active,
 input[type="submit"]:focus {
 	border-color: #aaa #bbb #bbb;
-}
-
-.btn__container {
-	flex-direction: row;
-	display: flex;
-}
-
-.btn {
-	padding: 1rem;
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: bold;
-	letter-spacing: 0.185em;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #000000;
-}
-
-.btn__primary {
-	border: 4px solid black;
 }
 
 input[type="text"],
@@ -691,19 +637,13 @@ textarea {
 	width: 100%;
 }
 
-.flex {
-	display: flex;
-}
+/*--------------------------------------------------------------
+# Layouts
+--------------------------------------------------------------*/
 
-.flex-row {
-	display: flex;
-	flex-direction: row;
-}
-
-.flex-column {
-	display: flex;
-	flex-direction: column;
-}
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
 
 /* Navigation
 --------------------------------------------- */
@@ -716,27 +656,27 @@ textarea {
 	display: none;
 	list-style: none;
 	margin: 0;
-	padding-left: 0;
+	padding-right: 0;
 }
 
 .main-navigation ul ul {
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
+	float: right;
 	position: absolute;
 	top: 100%;
-	left: -999em;
+	right: -999em;
 	z-index: 99999;
 }
 
 .main-navigation ul ul ul {
-	left: -999em;
+	right: -999em;
 	top: 0;
 }
 
 .main-navigation ul ul li:hover > ul,
 .main-navigation ul ul li.focus > ul {
 	display: block;
-	left: auto;
+	right: auto;
 }
 
 .main-navigation ul ul a {
@@ -745,7 +685,7 @@ textarea {
 
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
-	left: auto;
+	right: auto;
 }
 
 .main-navigation li {
@@ -764,16 +704,20 @@ textarea {
 }
 
 @media screen and (min-width: 37.5em) {
+
 	.menu-toggle {
 		display: none;
 	}
+
 	.main-navigation ul {
 		display: flex;
 	}
 }
 
-.site-main .comment-navigation, .site-main
-.posts-navigation, .site-main
+.site-main .comment-navigation,
+.site-main
+.posts-navigation,
+.site-main
 .post-navigation {
 	margin: 0 0 1.5em;
 }
@@ -868,8 +812,8 @@ textarea {
 
 .wp-caption img[class*="wp-image-"] {
 	display: block;
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 }
 
 .wp-caption .wp-caption-text {
@@ -930,6 +874,13 @@ textarea {
 	display: block;
 }
 
+/*--------------------------------------------------------------
+# Plugins
+--------------------------------------------------------------*/
+
+/* Jetpack infinite scroll
+--------------------------------------------- */
+
 /* Hide the Posts Navigation and the Footer when Infinite Scroll is in use. */
 .infinite-scroll .posts-navigation,
 .infinite-scroll.neverending .site-footer {
@@ -940,6 +891,13 @@ textarea {
 .infinity-end.neverending .site-footer {
 	display: block;
 }
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+
+/* Accessibility
+--------------------------------------------- */
 
 /* Text meant only for screen readers. */
 .screen-reader-text {
@@ -966,7 +924,7 @@ textarea {
 	font-size: 0.875rem;
 	font-weight: 700;
 	height: auto;
-	left: 5px;
+	right: 5px;
 	line-height: normal;
 	padding: 15px 23px 14px;
 	text-decoration: none;
@@ -980,18 +938,16 @@ textarea {
 	outline: 0;
 }
 
+/* Alignments
+--------------------------------------------- */
 .alignleft {
-	/*rtl:ignore*/
 	float: left;
-	/*rtl:ignore*/
 	margin-right: 1.5em;
 	margin-bottom: 1.5em;
 }
 
 .alignright {
-	/*rtl:ignore*/
 	float: right;
-	/*rtl:ignore*/
 	margin-left: 1.5em;
 	margin-bottom: 1.5em;
 }
@@ -999,429 +955,7 @@ textarea {
 .aligncenter {
 	clear: both;
 	display: block;
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 	margin-bottom: 1.5em;
 }
-
-.header-image {
-	background-size: cover;
-	background-position: center center;
-	height: 95vh;
-}
-
-.header-image__container {
-	height: 100%;
-}
-
-.header-image__content {
-	grid-column: 1 / 12;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-	align-items: flex-start;
-	padding: 100px 0 120px 0;
-	color: white;
-}
-
-.header-image__content h1 {
-	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-}
-
-.grid nav {
-	grid-column: 2 / 12;
-	grid-row: 1;
-}
-
-.navgrid {
-	background-color: white;
-}
-
-.nav__list {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	list-style: none;
-}
-
-.nav__list-item {
-	display: inline-block;
-}
-
-.nav__list-item a {
-	font-family: 'Indie Flower', cursive;
-	font-weight: 400;
-	text-transform: uppercase;
-	font-size: 1.25rem;
-	line-height: 1.25rem;
-	letter-spacing: 2;
-	text-decoration: none;
-	color: #000;
-}
-
-.about-me {
-	background-color: #f9f9f9;
-}
-
-.profile {
-	display: inline-grid;
-	grid-column: 1/13;
-	justify-items: center;
-	align-items: center;
-}
-
-@media screen and (min-width: 960px) {
-	.profile {
-		grid-column: 1 / 7;
-	}
-}
-
-.profile-image {
-	display: inline-grid;
-	grid-column: 1/13;
-	justify-items: center;
-	align-items: center;
-}
-
-.profile-image img {
-	border-radius: 50%;
-	margin-top: 12px;
-	margin-bottom: 12px;
-}
-
-@media screen and (min-width: 960px) {
-	.profile-image {
-		grid-column: 8/13;
-	}
-}
-
-.section__title {
-	grid-row: 1;
-	grid-column: 1/13;
-	text-align: center;
-}
-
-.portfolio__items {
-	grid-row: 2;
-	grid-column: 1/13;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
-@media screen and (min-width: 960px) {
-	.portfolio__items {
-		flex-direction: row;
-	}
-}
-
-.portfolio__item-title {
-	text-align: center;
-	margin: 12px;
-}
-
-.portfolio {
-	padding: 1rem;
-}
-
-.portfolio > figure {
-	margin: 0;
-	display: grid;
-	grid-template-rows: 1fr auto;
-	margin-bottom: 10px;
-	break-inside: avoid;
-}
-
-.portfolio > figure > img {
-	max-width: 100%;
-	display: block;
-	grid-row: 1 / -1;
-	grid-column: 1;
-}
-
-.portfolio > .container {
-	column-count: 1;
-	column-gap: 1rem;
-}
-
-@media screen and (min-width: 640px) {
-	.portfolio > .container {
-		column-count: 2;
-	}
-}
-
-@media screen and (min-width: 960px) {
-	.portfolio > .container {
-		column-count: 4;
-	}
-}
-
-.cta {
-	background-color: #DCD2C8;
-}
-
-.call-to-action {
-	grid-column: 1/13;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-evenly;
-	padding: 1rem;
-}
-
-.call-to-action h1, .call-to-action h2 {
-	text-align: center;
-}
-
-.cta__socials {
-	padding-top: 38px;
-}
-
-.cta__socials-icon {
-	margin: 0 24px;
-}
-
-.service {
-	padding: 1rem 0px;
-}
-
-@media screen and (min-width: 960px) {
-	.service {
-		padding: 2rem;
-	}
-}
-
-.service__content {
-	grid-row: 2;
-	grid-column: 1/13;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-evenly;
-	align-items: center;
-	background: #F9F9F9;
-	outline: 2px solid #C9BDB1;
-}
-
-@media screen and (min-width: 960px) {
-	.service__content {
-		grid-row: 1;
-		grid-column: 2/8;
-	}
-	.service__content.even {
-		grid-column: 5/12;
-	}
-}
-
-.service__content .service__content-header {
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 3rem;
-	letter-spacing: 0.085em;
-	text-transform: uppercase;
-	color: #363B34;
-}
-
-.service__content .service__content-quote {
-	font-family: Indie Flower;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 1.5rem;
-	letter-spacing: 0.085em;
-	text-transform: uppercase;
-	margin: 0;
-	background-color: #C9BDB1;
-	color: #F9F9F9;
-	padding: 1rem;
-	text-align: center;
-}
-
-.service__content .service__content-price {
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 1.5rem;
-	line-height: 2.5rem;
-	text-align: center;
-	letter-spacing: 0.085em;
-	color: #000000;
-}
-
-.service__content .service__content-info {
-	font-family: Poppins;
-	font-style: normal;
-	font-weight: 300;
-	font-size: 1.1rem;
-	line-height: 2.5rem;
-	text-align: center;
-	letter-spacing: 0.085em;
-	color: #000000;
-}
-
-.service__image {
-	grid-column: 1/13;
-	grid-row: 1;
-	display: inline-grid;
-	align-items: center;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.service__image img {
-	object-fit: cover;
-	width: 100%;
-}
-
-@media screen and (min-width: 960px) {
-	.service__image {
-		grid-row: 1;
-		grid-column: 8/12;
-	}
-	.service__image.even {
-		grid-column: 2/5;
-	}
-}
-
-.social-slider {
-	padding: 1rem;
-}
-
-.instagram__items {
-	grid-column: 1/13;
-}
-
-.instagram__item {
-	margin-right: 12px;
-}
-
-footer {
-	background-color: #DCD2C8;
-}
-
-.footer__socials {
-	background-color: #C9BDB1;
-	justify-content: center;
-	display: flex;
-	padding: 1rem;
-}
-
-.footer__socials img {
-	margin-right: 12px;
-}
-
-@media screen and (min-width: 960px) {
-	.footer__contact {
-		width: calc(100% / 3);
-	}
-}
-
-.footer-wrapper {
-	display: flex;
-	flex-direction: column;
-	grid-column: 1/13;
-}
-
-@media screen and (min-width: 960px) {
-	.footer-wrapper {
-		flex-direction: row;
-		justify-content: space-around;
-	}
-}
-
-.footer__secondary {
-	display: flex;
-	flex-direction: column;
-}
-
-.footer__secondary img {
-	margin-left: auto;
-	margin-right: auto;
-}
-
-@media screen and (min-width: 960px) {
-	.footer__secondary {
-		width: calc(100% / 3);
-	}
-}
-
-.footer__secondary > span {
-	font-family: Poppins;
-	font-size: 10px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.5rem;
-	letter-spacing: 0.185em;
-	text-align: left;
-}
-
-.footer__secondary > span {
-	font-family: Poppins;
-	font-size: 12px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 18px;
-	letter-spacing: 0.185em;
-	text-align: center;
-}
-
-.footer__secondary-leaf {
-	transform: rotate(-25.39deg);
-}
-
-.footer__third {
-	text-align: left;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-}
-
-@media screen and (min-width: 960px) {
-	.footer__third {
-		width: calc(100% / 3);
-	}
-}
-
-.footer__third > .bold {
-	font-family: Poppins;
-	font-size: 18px;
-	font-style: normal;
-	font-weight: 700;
-	line-height: 2.7rem;
-	letter-spacing: 0.185em;
-}
-
-.footer__third > p > span {
-	font-family: Poppins;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 1.5rem;
-	letter-spacing: 0.185em;
-	text-align: left;
-}
-
-.footer__third > hr {
-	width: 25px;
-	position: absolute;
-	margin-top: -90px;
-}
-
-.copyright {
-	font-family: Poppins;
-	font-size: 10px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 15px;
-	letter-spacing: 0.185em;
-	text-align: left;
-}
-
-.rte {
-	grid-column: 2/12;
-	text-align: center;
-}
-
-/*# sourceMappingURL=style.css.map */

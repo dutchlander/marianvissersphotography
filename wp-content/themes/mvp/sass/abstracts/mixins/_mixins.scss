@@ -1,0 +1,71 @@
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Column width with margin
+@mixin column-width($numberColumns: 3) {
+	width: map-get($columns, $numberColumns) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+}
+
+// Media Queries
+$breakpoint-xs:                 479px;
+$breakpoint-sm:                 480px;
+$breakpoint-md:                 640px;
+$breakpoint-lg:                 960px; //iPad
+$breakpoint-xl:                 1280px;
+$breakpoint-xxl:                1440px;
+$breakpoint-xxxl:               1920px;
+
+$breakpoints: (
+    xs: $breakpoint-xs,
+    sm: $breakpoint-sm,
+    md: $breakpoint-md,
+    lg: $breakpoint-lg,
+    xl: $breakpoint-xl,
+    xxl: $breakpoint-xxl,
+    xxxl: $breakpoint-xxxl
+) !default;
+
+@mixin breakpoint(
+    $breakpoint,
+    $breakpoint-direction: min
+) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media screen and (#{$breakpoint-direction}-width: map-get($breakpoints, $breakpoint)) {
+            @content;
+        }
+    }
+}
+
+@mixin xs-only {
+    @media (max-width: $breakpoint-xs) {
+        @content;
+    }
+}
+
+@mixin sm-only {
+    @media only screen and (min-width: $breakpoint-sm) and (max-width: ($breakpoint-md - 1)) {
+        @content;
+    }
+}
+
+@mixin md-only {
+    @media only screen and (min-width: $breakpoint-md) and (max-width: ($breakpoint-lg - 1)) {
+        @content;
+    }
+}
+
+@mixin lg-only {
+    @media only screen and (min-width: $breakpoint-lg) and (max-width: ($breakpoint-xl - 1)) {
+        @content;
+    }
+}
+
+@mixin xl-only {
+    @media only screen and (min-width: $breakpoint-xl) and (max-width: ($breakpoint-xxl - 1)) {
+        @content;
+    }
+}
