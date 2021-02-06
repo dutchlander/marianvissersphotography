@@ -1,24 +1,9 @@
+/*
+Theme Name: MVP
+Author: Ruud Vissers
+Author URI: http://ruudvissers.nl
+Version: 1.0
 
-*, 
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-:root {
-    --clr-primary: rgba(221, 136, 51, 0.8);
-    --clr-dark: #0C0E36;
-    --clr-light: #FFF;
-    --fw-normal: 400;
-    --fw-bold: 700;
-    --fw-black: 900;
-}
-
-body {
-    margin: 0;
-    /* font-family: 'Work Sans', sans-serif; */
-    font-size: 1.125rem;
-    color: clr(--clr-dark);
-    line-height: 1.38;
-    background-color: gray;;
-}
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
