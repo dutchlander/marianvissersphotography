@@ -22,36 +22,4 @@
 	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
 }
 
-.grid nav {
-	grid-column: 2 / 12;
-	grid-row: 1;
-}
-
-.navgrid {
-	background-color: white;
-}
-
-.nav__list {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	align-items: center;
-	list-style: none;
-}
-
-.nav__list-item {
-	display: inline-block;
-}
-
-.nav__list-item a {
-	font-family: 'Indie Flower', cursive;
-	font-weight: 400;
-	text-transform: uppercase;
-	font-size: 1.25rem;
-	line-height: 1.25rem;
-	letter-spacing: 2;
-	text-decoration: none;
-	color: #000;
-}
-
 /*# sourceMappingURL=header.css.map */
