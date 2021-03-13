@@ -1,4 +1,5 @@
 .social-slider {
+	overflow-x: hidden;
 	padding: 1rem;
 }
 
