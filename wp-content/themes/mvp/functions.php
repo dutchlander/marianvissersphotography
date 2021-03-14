@@ -20,3 +20,6 @@ function mvp_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'mvp_scripts' );
 
+//Enable menu's
+add_theme_support( 'menus' );
+

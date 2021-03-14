@@ -19,14 +19,21 @@
         <div class="bar"></div>
         <div class="bar half end"></div>
     </div>
+    <?php
+        $menu = wp_get_nav_menu_items('hoofdmenu');
+        //var_dump($menu);
+    ?>
     <nav id="nav" class="nav top-nav">
         <ul class="nav__list">
-            <li class="nav__list-item"><a href="aboutme.html" class="nav__link">About me</a></li>
-            <li class="nav__list-item"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
-            <li class="nav__list-item logo white"><a href="index.html" class="nav__link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo_wit.png" alt="" class="logo"></a></li>
-            <li class="nav__list-item logo black"><a href="index.html" class="nav__link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo_zwart.png" alt="" class="logo"></a></li>
-            <li class="nav__list-item"><a href="services.html" class="nav__link">Services</a></li>
-            <li class="nav__list-item"><a href="contact.html" class="nav__link">Contact</a></li>
+            <?php foreach($menu as $menuItem) { ?>
+                <?php if($menuItem->title != 'homepage') { ?>
+                    <li class="nav__list-item"><a href="<?php echo $menuItem->url; ?>" class="nav__link"><?php echo $menuItem->title; ?></a></li>
+                <?php } ?>
+                <?php if($menuItem->title === 'homepage') { ?>
+                    <li class="nav__list-item logo white"><a href="<?php echo $menuItem->url; ?>" class="nav__link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo_wit.png" alt="" class="logo"></a></li>
+                    <li class="nav__list-item logo black"><a href="<?php echo $menuItem->url; ?>" class="nav__link"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/Logo_zwart.png" alt="" class="logo"></a></li>
+                <?php } ?>
+            <?php } ?>
         </ul>
     </nav>
 

@@ -392,11 +392,11 @@ h6 {
 }
 
 .subheader {
-	font-family: 'Indie Flower', cursive;
+	font-family: 'BisousSolid';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 1.2rem;
-	letter-spacing: 0.085em;
+	font-size: 28px;
+	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	height: auto;
 	color: #363B34;
@@ -465,6 +465,12 @@ big {
 	font-size: 125%;
 }
 
+@font-face {
+	font-family: 'BisousSolid';
+	font-weight: normal;
+	src: url("/wp-content/themes/mvp/assets/fonts/BisousSolid.otf");
+}
+
 h1,
 h2,
 h3,
@@ -486,11 +492,11 @@ h6 {
 }
 
 .subheader {
-	font-family: 'Indie Flower', cursive;
+	font-family: 'BisousSolid';
 	font-style: normal;
 	font-weight: normal;
-	font-size: 1.2rem;
-	letter-spacing: 0.085em;
+	font-size: 28px;
+	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	height: auto;
 	color: #363B34;
@@ -1441,10 +1447,10 @@ footer {
 }
 
 .top-nav .nav__list .nav__list-item .nav__link {
-	font-family: Indie Flower;
-	font-size: 24px;
+	font-family: 'BisousSolid';
+	font-size: 28px;
 	line-height: 26px;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.2em;
 	text-transform: uppercase;
 	color: black;
 	text-decoration: none;
@@ -1486,6 +1492,7 @@ footer {
 .top-nav .nav__list .nav__list-item .nav-link:hover,
 .top-nav .nav__list .nav__list-item .nav-link:focus {
 	background: green;
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
